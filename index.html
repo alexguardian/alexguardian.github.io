@@ -70,7 +70,8 @@
                 $(element).find('.dropdown').removeClass('open');
             }
     )
-    $(document).on('click', function() {
+    $(document).on('touchstart', function() {
+        $('body').css('color', 'red');
         $('.dropdown-menu').stop().fadeOut(200);
         $('.dropdown').removeClass('open');
     });
